@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: radial-gradient(circle at 10% 0%, rgba(44, 83, 134, 0.75), transparent 55%),
+    radial-gradient(circle at 90% 10%, rgba(132, 94, 247, 0.35), transparent 60%),
+    #020617;
+  min-height: 100vh;
+}
+
+.blurred-edge {
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  backdrop-filter: blur(18px);
+}
